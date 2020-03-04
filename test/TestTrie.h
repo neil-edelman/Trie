@@ -16,6 +16,7 @@ typedef void (*PN_(Action))(PN_(Type) *);
 /* `TRIE_TEST` must be a function that implements `<PN>Action`. */
 static const PN_(Action) PN_(filler) = (TRIE_TEST);
 
+/** Prints all data. */
 static void PN_(print)(const struct N_(Trie) *const trie) {
 	size_t target, n, on;
 	unsigned branch;
